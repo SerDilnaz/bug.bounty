@@ -33,7 +33,7 @@
 
   .bgText {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    background-color: rgba(0, 0, 0, 0.4);
     color: white;
     font-weight: bold;
     border: 3px solid #f1f1f1;
@@ -106,8 +106,8 @@
 }
 
 .hexSectionTitle {
-  align-self: flex-start; /* Добавляем отступ сверху */
-  margin-left: 40px; /* Добавляем отступ слева */
+  align-self: flex-start;
+  margin-left: 40px;
 }
 .hexGrid {
   display: grid;
