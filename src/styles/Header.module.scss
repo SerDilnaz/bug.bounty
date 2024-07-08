@@ -1,0 +1,29 @@
+.appBar {
+  background-color: #56253c;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 20px 20px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title, .centeredTitle, .menuItem {
+  color: white;
+  margin: 0 10px;
+}
+
+.centeredTitle {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.menuItem {
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
