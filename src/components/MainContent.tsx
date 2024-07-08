@@ -11,7 +11,7 @@ const MainContent: React.FC = () => {
           <p className={styles.text}>
             Описание программы bug bounty. Здесь вы можете найти информацию о ...
           </p>
-          <Image src="/bug.png" alt="Bug Bounty" width={300} height={200} className={styles.image} />
+          <Image src="/bug.png" alt="Bug Bounty" width={300} height={300} className={styles.image} />
         </div>
       </div>
       <div className={styles.section}>
