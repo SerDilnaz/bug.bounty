@@ -46,28 +46,80 @@
 }
 
 .firstSection {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  padding: 40px;
+  background: linear-gradient(135deg, #632B45FF 0%, #0e2854 100%);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
 
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/path/to/pattern.png');
+    opacity: 0.1;
+    z-index: 1;
+    background-attachment: fixed;
+  }
+
+  .sectionTitle {
+    font-size: 2.5em;
+    color: #fff;
+    z-index: 2;
+    animation: fadeIn 1.5s ease-in-out;
+  }
 
   .contentWrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    z-index: 2;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  .textCard, .imageCard {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
   }
 
   .text {
-    flex: 1;
-    text-align: left;
-    margin-right: 20px;
+    font-size: 1.2em;
+    color: #333;
   }
 
   .image {
-    flex: 1;
-    text-align: right;
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: auto;
+  }
+
+  .additionalContent {
+    margin-top: 20px;
+    z-index: 2;
+
+    .learnMoreButton {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #1c4186;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #0e2854;
+      }
+    }
   }
 }
 

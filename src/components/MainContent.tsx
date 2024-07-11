@@ -6,14 +6,22 @@ const MainContent: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={`${styles.section} ${styles.firstSection}`}>
+        <div className={styles.background}></div>
         <h1 className={styles.sectionTitle}>Bug Bounty - это</h1>
         <div className={styles.contentWrapper}>
+        <div className={styles.textCard}>
           <p className={styles.text}>
-            Описание программы bug bounty. Здесь вы можете найти информацию о ...
+          Описание программы bug bounty. Здесь вы можете найти информацию о ...
           </p>
-          <Image src="/bug.png" alt="Bug Bounty" width={300} height={300} className={styles.image} />
+        </div>
+        <div className={styles.imageCard}>
+        <Image src="/bug.png" alt="Bug Bounty" width={300} height={300} className={styles.image} />
         </div>
       </div>
+  <div className={styles.additionalContent}>
+    <button className={styles.learnMoreButton}>Узнать больше</button>
+  </div>
+</div>
       <div className={styles.section}>
         <div className={styles.bgImage} style={{ backgroundImage: "url('/what.png')" }}></div>
         <div className={styles.bgText}>
